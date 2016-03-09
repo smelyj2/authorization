@@ -1,0 +1,176 @@
+﻿*{
+ 
+  padding: 0; 
+  margin: 0; 
+
+}
+p { margin: 5px 0 10px 0; }
+
+*:focus {outline: none;}
+
+body {
+font-size:1em;
+font-family:Times New Roman;
+line-height: 1;
+background:#ccc url(tiled-image.gif) repeat-x top left;    /* BACKGROUND! !! ! ! ! ! ! ! ! ! ! */
+
+}
+
+ul{
+list-style-type: none;		
+}
+
+#leftside {
+display: inline-block;
+border: 1px solid red;
+width:30%;
+height: 100%;
+vertical-align: top;	
+}
+#btnside{
+position: relative;
+left: 25%;
+top: 25%;
+border: 1px solid red;	
+width:50%;
+height: 50%;
+background-color: #544545;	
+}
+
+.btn{
+background-color: #865E5E;
+width:100%;
+height:19%;	
+border: 1px solid red;	
+}
+
+.subBtn{
+background-color: #C35454;	
+width:100%;
+height:22%;
+display:none;	
+}
+
+#forma{
+display: inline-block;
+
+margin-top: 20%;
+width:50%;
+height:30%;	
+border: 1px solid #2F4F4F;	
+}
+
+#registFormA{
+display:none;	
+margin-top: 10%;
+width:40%;
+height:70%;	
+background-color: #F8F8FF;
+
+}
+
+.regArea{
+position:relative;	
+top:10%;
+left:20%;	
+width:60%;
+height:80%;	
+
+
+}
+
+.reg_form{
+width:100%;
+height:100%;
+border: 1px solid red;
+}
+
+.reg_form ul {
+margin:0px;
+padding:0px;
+
+}
+
+.reg_form li {
+padding:3%;
+border-bottom:1px solid #eee;
+
+}
+
+.reg_form li:first-child, .reg_form li:last-child {
+	border-bottom:1px solid #777;
+}
+
+.reg_form input{
+width: 43%;	
+height: 10.5%;
+	
+}
+.reg_form button {
+width: 21%;	
+height: 11%;
+text-align: center;	
+
+}
+.reg_form span{
+font-size:1em;	
+text-align: center;
+}
+
+.info{
+margin-top:5%;	
+width:95%;
+height:12%;	
+font-size: 0.5em;
+	
+}
+.myimg{
+cursor: pointer;	
+}
+
+#modal_form {
+width: 400px; 
+height: 300px; 
+border-radius: 5px;
+border: 3px #000 solid;
+background: #fff;
+position: fixed; 
+top: 45%; 
+left: 50%; 
+margin-top: -150px;
+margin-left: -200px;
+display: none; 
+opacity: 0; 
+z-index: 5; 
+padding: 20px 10px;
+}
+
+#modal_form #modal_close {
+width: 21px;
+height: 21px;
+position: absolute;
+top: 10px;
+right: 10px;
+cursor: pointer;
+display: block;
+}
+
+#overlay {
+z-index:3; 
+position:fixed; 
+background-color:#000; 
+opacity:0.8; 
+-moz-opacity:0.8; 
+filter:alpha(opacity=80);
+width:100%; 
+height:100%; 
+top:0; 
+left:0;
+cursor:pointer;
+display:none; 
+}
+
+
+/*-moz-
+-webkit-
+-o-*/
