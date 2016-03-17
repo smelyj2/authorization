@@ -56,7 +56,7 @@ $link = mysqli_connect('localhost','root','','testtable');
 		 
 		$password = $_POST['password'];
 
-		mysqli_query($link,"INSERT INTO datas(user_login, user_password)  VALUES ('$login','$password') ");  // Written log and pass 
+		mysqli_query($link,"INSERT INTO datas(user_login, user_password)  VALUES ('$login','$password') "); 
 		
 		echo "<span style='color:black;'>Спасибо за регистрацию!</span>";
 		     

@@ -20,7 +20,7 @@ function resetCap(){   // refresh capcha
 
 function senddata() {    // sends and process's the data on server from reg form
 event.preventDefault(); 	
-	var msg   = $('#formx').serialize();
+	var msg = $('#formx').serialize();
         $.ajax({
           type: 'POST',
           url: 'php/register.php',
@@ -48,6 +48,10 @@ function modalOpen() {	// open modal window
 }
 
 function modalClose() {	// close modal window
+	
+	$("#formx [name=login]").val(''); 
+	$("#formx [name=password]").val('');
+	
 	$('#modal_form')
 		.animate({opacity: 0, top: '45%'}, 200,
 			function(){
@@ -55,6 +59,7 @@ function modalClose() {	// close modal window
 				$('#overlay').fadeOut(400);
 			}
 		);
+		
 
 }
 
