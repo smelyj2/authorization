@@ -13,12 +13,13 @@ $(function(){  //btn animation
 
 
 function resetCap(){   // refresh capcha
-	$(".myimg").attr("src", "php/captcha.php");	
+
+	$(".myimg").attr("src", "php/captcha.php?nocash="+Math.random());	
 
 }
 
 
-function senddata() {    // sends and process's the data on server from reg form
+function senddata(event) {    // sends and process's the data on server from reg form
 event.preventDefault(); 	
 	var msg = $('#formx').serialize();
         $.ajax({
@@ -38,7 +39,7 @@ event.preventDefault();
 }
 	
 
-function modalOpen() {	// open modal window
+function modalOpen(event) {	// open modal window
 	event.preventDefault();
 	$('#overlay')
 		.fadeIn(400,
@@ -62,6 +63,4 @@ function modalClose() {	// close modal window
 		
 
 }
-
-
 

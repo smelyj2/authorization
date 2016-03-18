@@ -60,7 +60,7 @@
 						<input type = "text" name = "kapcha" />
 					</li>
 					<li>
-						<button class="regOk" type="submit" onclick="senddata()"  >Ok!</button>
+						<button class="regOk" type="submit" onclick="senddata(event)"  >Ok!</button>
 						<button class="regCancel" type="submit" onclick="modalClose(); return false;">cancel</button>
 					</li>
 					
@@ -88,7 +88,7 @@
 						<input type="text" name="password" />
 					</li>
 					<li>
-						<button class="submit" type="submit" name="submit" onClick="modalOpen();resetCap()" ><span>Reg</span></button> 
+						<button class="submit" type="submit" name="submit" onClick="modalOpen(event);resetCap();" ><span>Reg</span></button> 
 						<button class="login" type="submit" name="submit"><span>log in</span></button> 
 					</li>
 					
