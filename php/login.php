@@ -39,8 +39,6 @@ if(isset($_POST['submit']))
         setcookie("id", $data['user_id'], time()+60*60*24*30);
         setcookie("hash", $hash, time()+60*60*24*30);
 		
-		//echo "Установленные куки id : ".$_COOKIE["id"]."<br>";
-		//echo "Установленные куки hash : ".$_COOKIE["hash"]."<br>";
 		
 		# Redirects the browser to a page of the script test
         header("Location: check.php"); exit();

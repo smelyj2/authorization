@@ -52,6 +52,7 @@ function modalClose() {	// close modal window
 	
 	$("#formx [name=login]").val(''); 
 	$("#formx [name=password]").val('');
+	$("#formx [name=kapcha]").val('');
 	
 	$('#modal_form')
 		.animate({opacity: 0, top: '45%'}, 200,
