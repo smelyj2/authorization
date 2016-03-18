@@ -1,4 +1,9 @@
-To see my example authentication on your computer:
+You can see it on YouTube :
+https://www.youtube.com/watch?v=kM-QSLjNXTU
+
+
+
+Or see my example authentication on your computer:
 
     1) Copy the all contents from this folder to your lokalhost  Apache server.
     2) Create a database on the similarity of my:
